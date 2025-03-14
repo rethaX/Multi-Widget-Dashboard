@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Widget Dashboard</title>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Widget Container -->
+    <div class="widget-container">
+        <!-- Weather Widget -->
+        <div class="widget">
+            <h2><i class="fas fa-cloud-sun"></i> Weather Widget</h2>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="fetchWeather()">Get Weather</button>
+            <div id="weatherResult" class="result"></div>
+        </div>
+
+        <!-- News Widget -->
+        <div class="widget">
+            <h2><i class="fas fa-newspaper"></i> News Widget</h2>
+            <select id="countrySelect" title="Select a country">
+                <option value="">All Countries</option>
+                <option value="ae">United Arab Emirates</option>
+                <option value="ar">Argentina</option>
+                <option value="at">Austria</option>
+                <option value="au">Australia</option>
+                <option value="be">Belgium</option>
+                <option value="bg">Bulgaria</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="ch">Switzerland</option>
+                <option value="cn">China</option>
+                <option value="co">Colombia</option>
+                <option value="cu">Cuba</option>
+                <option value="cz">Czech Republic</option>
+                <option value="de">Germany</option>
+                <option value="eg">Egypt</option>
+                <option value="fr">France</option>
+                <option value="gb">United Kingdom</option>
+                <option value="gr">Greece</option>
+                <option value="hk">Hong Kong</option>
+                <option value="hu">Hungary</option>
+                <option value="id">Indonesia</option>
+                <option value="ie">Ireland</option>
+                <option value="il">Israel</option>
+                <option value="in">India</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="kr">South Korea</option>
+                <option value="lt">Lithuania</option>
+                <option value="lv">Latvia</option>
+                <option value="ma">Morocco</option>
+                <option value="mx">Mexico</option>
+                <option value="my">Malaysia</option>
+                <option value="ng">Nigeria</option>
+                <option value="nl">Netherlands</option>
+                <option value="no">Norway</option>
+                <option value="nz">New Zealand</option>
+                <option value="ph">Philippines</option>
+                <option value="pl">Poland</option>
+                <option value="pt">Portugal</option>
+                <option value="ro">Romania</option>
+                <option value="rs">Serbia</option>
+                <option value="ru">Russia</option>
+                <option value="sa">Saudi Arabia</option>
+                <option value="se">Sweden</option>
+                <option value="sg">Singapore</option>
+                <option value="si">Slovenia</option>
+                <option value="sk">Slovakia</option>
+                <option value="th">Thailand</option>
+                <option value="tr">Turkey</option>
+                <option value="tw">Taiwan</option>
+                <option value="ua">Ukraine</option>
+                <option value="us">United States</option>
+                <option value="ve">Venezuela</option>
+                <option value="za">South Africa</option>
+            </select>
+            <button onclick="fetchNewsSources()">Get Headlines</button>
+            <div id="newsResult" class="result"></div>
+        </div>
+
+        <!-- Movie Widget -->
+        <div class="widget">
+            <h2><i class="fas fa-film"></i> Movie Widget</h2>
+            <input type="text" id="movieInput" placeholder="Enter movie title or IMDb ID">
+            <button onclick="fetchMovie()">Get Movie Details</button>
+            <div id="movieResult" class="result"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by <a href="https://example.com" target="_blank">Rethabile Mokwane</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
