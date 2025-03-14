@@ -34,3 +34,5 @@ This project is a simple web application that integrates three widgets:
 ## How to Use
 1. Clone the repository:
    git clone https://github.com/rethaX/Multi-Widget-Dashboard.git
+
+View the Demo on this link https://multi-widget-dashboard.vercel.app
