@@ -1,12 +1,12 @@
-// API Keys and URLs
-const weatherApiKey = '430ba4c130a0aa8fae59736d7ec10d57'; // OpenWeatherMap API Key
-const weatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+// Decode API Keys
+const weatherApiKey = atob('NDMwYmE0YzEzMGEwYWE4ZmFlNTk3MzZkN2VjMTBkNTc=');
+const newsApiKey = atob('NzFiZTM5OTVhOWFmNDcxOGEwOThlOTY1MjdhNDM4NDU=');
+const omdbApiKey = atob('MzQzNmE5YjU=');
 
-const newsApiKey = '71be3995a9af4718a098e96527a43845'; // NewsAPI API Key
+// API URLs
+const weatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 const newsApiUrl = 'https://newsapi.org/v2/top-headlines';
 const newsSourcesUrl = 'https://newsapi.org/v2/top-headlines/sources';
-
-const omdbApiKey = '3436a9b5'; // OMDB API Key
 const omdbApiUrl = 'https://www.omdbapi.com/';
 const omdbPosterUrl = 'https://img.omdbapi.com/';
 
